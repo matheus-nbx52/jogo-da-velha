@@ -12,6 +12,21 @@ let board = [
 let currentPlayer = player;
 let gameOver = false;
 
+// Função para imprimir o tabuleiro no terminal
+
+function printBoard(board) {
+  console.clear(); 
+  
+  // limpa a tela antes de imprimir de novo
+  
+  console.log("\n");
+  for (let row of board) {
+    console.log(row.join(" | "));
+  }
+  console.log("\n");
+}
+
+
 
 //função para verificar o movimento do jogador
 function handlePlayerMove() {
