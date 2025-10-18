@@ -64,3 +64,23 @@ function checkWin () {
   }
   console.log(checkWin())
   
+  
+function switchPlayer() {
+  currentPlayer = currentPlayer === "X" ? "O" : "X";
+
+  console.log(`Jogador trocado! O próximo jogador é: ${currentPlayer}`);
+}
+
+// checkWin vem primeiro
+// função para empate de jogadores.
+
+function checkDraw() {
+  for (let i = 0; i < board.length; i++) {
+    if (board[i] === "") {
+      console.log("Encontrou espaço vazio.");
+      return false;
+    }
+  }
+  console.log("Tabuleiro cheio..");
+  return true;
+}
