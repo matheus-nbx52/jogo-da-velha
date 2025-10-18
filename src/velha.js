@@ -13,7 +13,6 @@ let currentPlayer = player;
 let gameOver = false;
 
 
-
 //função para verificar o movimento do jogador
 function handlePlayerMove() {
     let validMove = false
@@ -30,3 +29,23 @@ function handlePlayerMove() {
         }
     }
 }
+
+function checkWin () {  
+  const win = [
+    [0,1,2], [3,4,5], [6,7,8], 
+    [0,3,6], [1,4,7], [2,5,8], 
+    [0,4,8], [2,4,6]           
+  ]; 
+   for (let i=0; i< win.length; i++){
+    let comb= win[i]
+        if (board[comb[0]]===currentPlayer &&
+          board[comb[1]]===currentPlayer &&
+          board[comb[2]]=== currentPlayer
+          ){
+            return true 
+          }
+   }
+     return false
+  }
+  console.log(checkWin())
+  
