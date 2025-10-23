@@ -1,6 +1,6 @@
 # 🎮 Jogo da Velha
 
-Um projeto simples de **Jogo da Velha** desenvolvido em **JavaScript** para ser executado no ambiente **Node.js**, utilizando o módulo `readline-sync` para interação com o usuário via terminal. Este trabalho faz parte do nosso aprendizado no módulo Fullstack da Rede Cidadã/Start.
+Um projeto simples de **Jogo da Velha** desenvolvido em **JavaScript** para ser executado no ambiente **Node.js**, utilizando o módulo `readline-sync` para interação com o usuário via terminal. Este trabalho faz parte do nosso aprendizado na formação de Fullstack da Rede Cidadã/Start.
 
 
 
@@ -37,6 +37,12 @@ Para rodar o projeto localmente, siga os passos abaixo:
 Certifique-se de ter o **Node.js** instalado em sua máquina.
 
 ### 1. Clonar o Repositório
-```bash
-git clone <URL_DO_SEU_REPOSITORIO>
-cd nome-do-diretorio-do-projeto
+bash
+git clone https://github.com/matheus-nbx52/jogo-da-velha.git.
+
+### 2. Executando o Projeto
+
+cd src
+
+node velha.js
+
